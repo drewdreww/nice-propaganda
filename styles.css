@@ -1,0 +1,160 @@
+/* Reset margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('ncbglastzz.png'); /* Replace with your image path */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Styling the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffffff37;
+}
+
+/* Home section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    color: white;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0097a7;
+}
+
+/* Products section */
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+/* Styling the carousel */
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 600px; /* Ensure it stays square */
+    height: 600px;    /* Make it square */
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-container img {
+    width: 600px;  /* Ensure the image matches the carousel dimensions */
+    height: 600px; /* Ensures square dimensions */
+    object-fit: cover;
+}
+
+/* Text overlay on top of the carousel */
+.carousel-text {
+    position: absolute;
+    top: -40px; /* Adjust to position above the carousel */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    text-align: center;
+}
+
+.carousel-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Carousel buttons */
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.products h2 {
+    font-size: 36px; /* Adjust the size to make it bigger */
+    font-weight: bold; /* Ensure it remains bold */
+    text-align: center; /* Center align the text */
+    margin-bottom: 20px; /* Add some spacing below */
+    color: white; /* Keep it visible on the background */
+}
