@@ -4,19 +4,19 @@ const nextBtn = document.querySelector('.next-btn');
 
 let index = 0;
 
-// Function to update carousel position
+
 function updateCarousel() {
-    carouselContainer.style.transform = `translateX(-${index * 100}%)`;
+    carouselContainer.style.transform = `translateX(-${index * 100}%)`; 
 }
 
 // Add event listeners for buttons
 prevBtn.addEventListener('click', () => {
-    index = (index > 0) ? index - 1 : 3; // Wrap around to the last image
+    index = (index > 0) ? index - 1 : 3; 
     updateCarousel();
 });
 
 nextBtn.addEventListener('click', () => {
-    index = (index < 3) ? index + 1 : 0; // Wrap around to the first image
+    index = (index < 3) ? index + 1 : 0; 
     updateCarousel();
 });
 
