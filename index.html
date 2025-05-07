@@ -4,92 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nice Propaganda</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="nclogo.png"> 
+    <link rel="icon" type="image/x-icon" href="nclogo.png">
 </head>
 <body>
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact Us</a> 
-    </div>
-
-    <!-- Home Section -->
-    <section id="home" class="home">
-        <div class="home-content">
-            <h1>Welcome to Nice Propaganda</h1>
-            <p>Your destination for bold fashion and unforgettable style.</p>
-            <a href="https://www.facebook.com/profile.php?id=61555358766657" class="btn" target="_blank">Learn More</a>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="products">
-        <h2>"𝐒𝐮𝐫𝐯𝐢𝐯𝐞 𝐓𝐡𝐞 𝐂𝐢𝐭𝐲 𝐒𝐢𝐞𝐠𝐞"</h2>
-        <h2>Available Now!</h2>
-        <div class="carousel">
-            <div class="carousel-container">
-                <img src="ncwhite1.jpg" alt="Product 1">
-                <img src="ncwhite2.jpg" alt="Product 2">
-                <img src="ncblack1.jpg" alt="Product 3">
-                <img src="ncblack2.jpg" alt="Product 4">
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="#home" class="nav__logo">
+                <img src="nclogo.png" alt="Nice Propaganda Logo">
+            </a>
+            <div class="nav__menu">
+                <a href="#home" class="nav__link">Home</a>
+                <a href="#collection" class="nav__link">Collection</a>
+                <a href="#about" class="nav__link">About</a>
+                <a href="#contact" class="nav__link">Contact</a>
             </div>
-            <button class="prev-btn">❮</button>
-            <button class="next-btn">❯</button>
+            <button class="nav__toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <h1 class="hero__title">Nice Propaganda</h1>
+            <p class="hero__subtitle">Redefining Street Style</p>
+            <div class="hero__cta">
+                <a href="#collection" class="btn btn--primary">View Collection</a>
+                <a href="#about" class="btn btn--secondary">Learn More</a>
+            </div>
         </div>
     </section>
 
-    <!-- Our Location Section -->
-    <section id="location" class="location">
-        <h2>Our Location</h2>
-        <div class="location-content">
-            <img src="ncloc.png" alt="Our Location" class="location-image">
-            <p>155A. Perez BLDG, Sanciangko St. Pahina 6000 Cebu City, Philippines</p>
+    <!-- Collection Section -->
+    <section id="collection" class="collection">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">"𝐒𝐮𝐫𝐯𝐢𝐯𝐞 𝐓𝐡𝐞 𝐂𝐢𝐭𝐲 𝐒𝐢𝐞𝐠𝐞"</h2>
+                <p class="section__subtitle">Limited Edition Collection</p>
+            </div>
+            
+            <div class="collection__grid">
+                <div class="collection__item">
+                    <div class="collection__image">
+                        <img src="ncwhite1.jpg" alt="White Collection 1">
+                        <div class="collection__overlay">
+                            <h3>White Collection</h3>
+                            <p>Limited Edition</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection__item">
+                    <div class="collection__image">
+                        <img src="ncwhite2.jpg" alt="White Collection 2">
+                        <div class="collection__overlay">
+                            <h3>White Collection</h3>
+                            <p>Limited Edition</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection__item">
+                    <div class="collection__image">
+                        <img src="ncblack1.jpg" alt="Black Collection 1">
+                        <div class="collection__overlay">
+                            <h3>Black Collection</h3>
+                            <p>Limited Edition</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection__item">
+                    <div class="collection__image">
+                        <img src="ncblack2.jpg" alt="Black Collection 2">
+                        <div class="collection__overlay">
+                            <h3>Black Collection</h3>
+                            <p>Limited Edition</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="about-container">
-            <img src="ncwew2.jpg" alt="About Us" class="about-image">
-            <div class="about-text">
-                <h2>About Nice Propaganda</h2>
-                <p>At Nice Propaganda, we are dedicated to redefining style through bold and innovative fashion. Our clothing brand is driven by a passion for creating unique pieces that tell a story and inspire confidence. We blend creativity and quality to deliver designs that leave a lasting impression and resonate with individuality.</p>
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__image">
+                    <img src="ncwew2.jpg" alt="About Nice Propaganda">
+                </div>
+                <div class="about__content">
+                    <h2 class="section__title">About Us</h2>
+                    <p class="about__text">
+                        At Nice Propaganda, we are dedicated to redefining style through bold and innovative fashion. Our clothing brand is driven by a passion for creating unique pieces that tell a story and inspire confidence.
+                    </p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-tshirt"></i>
+                            <h3>Unique Designs</h3>
+                            <p>Bold and innovative fashion pieces</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <h3>Quality Craft</h3>
+                            <p>Premium materials and craftsmanship</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h3>Passion Driven</h3>
+                            <p>Created with love and dedication</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Us Section -->
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <div class="location__content">
+                <h2 class="section__title">Visit Our Store</h2>
+                <div class="location__grid">
+                    <div class="location__map">
+                        <img src="ncloc.png" alt="Store Location">
+                    </div>
+                    <div class="location__info">
+                        <div class="info__item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>155A. Perez BLDG, Sanciangko St. Pahina 6000 Cebu City, Philippines</p>
+                        </div>
+                        <div class="info__item">
+                            <i class="fas fa-clock"></i>
+                            <p>Open: Monday to Sunday, 10:00 AM to 9:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>We'd love to hear from you! Feel free to reach out with any questions or inquiries.</p>
-
-        <div class="contact-details">
-            <p>155A. Perez BLDG, Sanciangko St. Pahina 6000 Cebu City, Philippines</p>
-            <p>Open: Monday to Sunday, 10:00 AM to 9:00 PM</p>
-        </div>
-
-        <div class="social-links">
-            <div class="social-item">
-                <a href="https://www.facebook.com/profile.php?id=61555358766657" target="_blank">
-                    <img src="communication.png" alt="Facebook" class="social-icon">
-                    <span> Nice Propaganda on Facebook</span>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="https://www.instagram.com/nice_propaganda/" target="_blank">
-                    <img src="social.png" alt="Instagram" class="social-icon">
-                    <span> Nice Propaganda on Instagram</span>
-                </a>
+        <div class="container">
+            <div class="contact__content">
+                <h2 class="section__title">Get in Touch</h2>
+                <p class="contact__text">We'd love to hear from you! Feel free to reach out with any questions or inquiries.</p>
+                
+                <div class="social__links">
+                    <a href="https://www.facebook.com/profile.php?id=61555358766657" class="social__link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                        <span>Follow us on Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/nice_propaganda/" class="social__link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <span>Follow us on Instagram</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Nice Propaganda. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <img src="nclogo.png" alt="Nice Propaganda Logo" class="footer__logo">
+                <p class="footer__text">&copy; 2024 Nice Propaganda. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
